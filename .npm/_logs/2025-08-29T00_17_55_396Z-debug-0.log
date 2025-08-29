@@ -1,0 +1,608 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.9.3
+2 info using node@v22.19.0
+3 silly config load:file:/usr/lib/node_modules/npm/npmrc
+4 warn config production Use `--omit=dev` instead.
+5 silly config load:file:/opt/parser/.npmrc
+6 silly config load:file:/usr/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--production"
+9 verbose logfile logs-max:10 dir:/opt/parser/.npm/_logs/2025-08-29T00_17_55_396Z-
+10 verbose logfile /opt/parser/.npm/_logs/2025-08-29T00_17_55_396Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+15 silly reify moves {}
+16 silly reify mark deleted [ '/opt/parser/node_modules/@ampproject/remapping' ]
+17 silly reify mark deleted [ '/opt/parser/node_modules/@babel/code-frame' ]
+18 silly reify mark deleted [ '/opt/parser/node_modules/@babel/compat-data' ]
+19 silly reify mark deleted [ '/opt/parser/node_modules/@babel/core' ]
+20 silly reify mark deleted [ '/opt/parser/node_modules/@babel/core/node_modules/debug' ]
+21 silly reify mark deleted [ '/opt/parser/node_modules/@babel/core/node_modules/ms' ]
+22 silly reify mark deleted [
+22 silly reify   '/opt/parser/node_modules/@babel/core/node_modules/semver',
+22 silly reify   '/opt/parser/node_modules/@babel/core/node_modules/.bin/semver'
+22 silly reify ]
+23 silly reify mark deleted [ '/opt/parser/node_modules/@babel/generator' ]
+24 silly reify mark deleted [ '/opt/parser/node_modules/@babel/helper-compilation-targets' ]
+25 silly reify mark deleted [
+25 silly reify   '/opt/parser/node_modules/@babel/helper-compilation-targets/node_modules/semver',
+25 silly reify   '/opt/parser/node_modules/@babel/helper-compilation-targets/node_modules/.bin/semver'
+25 silly reify ]
+26 silly reify mark deleted [ '/opt/parser/node_modules/@babel/helper-globals' ]
+27 silly reify mark deleted [ '/opt/parser/node_modules/@babel/helper-module-imports' ]
+28 silly reify mark deleted [ '/opt/parser/node_modules/@babel/helper-module-transforms' ]
+29 silly reify mark deleted [ '/opt/parser/node_modules/@babel/helper-plugin-utils' ]
+30 silly reify mark deleted [ '/opt/parser/node_modules/@babel/helper-string-parser' ]
+31 silly reify mark deleted [ '/opt/parser/node_modules/@babel/helper-validator-identifier' ]
+32 silly reify mark deleted [ '/opt/parser/node_modules/@babel/helper-validator-option' ]
+33 silly reify mark deleted [ '/opt/parser/node_modules/@babel/helpers' ]
+34 silly reify mark deleted [
+34 silly reify   '/opt/parser/node_modules/@babel/parser',
+34 silly reify   '/opt/parser/node_modules/.bin/parser'
+34 silly reify ]
+35 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-async-generators' ]
+36 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-bigint' ]
+37 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-class-properties' ]
+38 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-class-static-block' ]
+39 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-import-attributes' ]
+40 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-import-meta' ]
+41 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-json-strings' ]
+42 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-jsx' ]
+43 silly reify mark deleted [
+43 silly reify   '/opt/parser/node_modules/@babel/plugin-syntax-logical-assignment-operators'
+43 silly reify ]
+44 silly reify mark deleted [
+44 silly reify   '/opt/parser/node_modules/@babel/plugin-syntax-nullish-coalescing-operator'
+44 silly reify ]
+45 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-numeric-separator' ]
+46 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-object-rest-spread' ]
+47 silly reify mark deleted [
+47 silly reify   '/opt/parser/node_modules/@babel/plugin-syntax-optional-catch-binding'
+47 silly reify ]
+48 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-optional-chaining' ]
+49 silly reify mark deleted [
+49 silly reify   '/opt/parser/node_modules/@babel/plugin-syntax-private-property-in-object'
+49 silly reify ]
+50 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-top-level-await' ]
+51 silly reify mark deleted [ '/opt/parser/node_modules/@babel/plugin-syntax-typescript' ]
+52 silly reify mark deleted [ '/opt/parser/node_modules/@babel/template' ]
+53 silly reify mark deleted [ '/opt/parser/node_modules/@babel/traverse' ]
+54 silly reify mark deleted [ '/opt/parser/node_modules/@babel/traverse/node_modules/debug' ]
+55 silly reify mark deleted [ '/opt/parser/node_modules/@babel/traverse/node_modules/ms' ]
+56 silly reify mark deleted [ '/opt/parser/node_modules/@babel/types' ]
+57 silly reify mark deleted [ '/opt/parser/node_modules/@bcoe/v8-coverage' ]
+58 silly reify mark deleted [ '/opt/parser/node_modules/@istanbuljs/load-nyc-config' ]
+59 silly reify mark deleted [ '/opt/parser/node_modules/@istanbuljs/schema' ]
+60 silly reify mark deleted [ '/opt/parser/node_modules/@jest/console' ]
+61 silly reify mark deleted [ '/opt/parser/node_modules/@jest/core' ]
+62 silly reify mark deleted [ '/opt/parser/node_modules/@jest/environment' ]
+63 silly reify mark deleted [ '/opt/parser/node_modules/@jest/expect' ]
+64 silly reify mark deleted [ '/opt/parser/node_modules/@jest/expect-utils' ]
+65 silly reify mark deleted [ '/opt/parser/node_modules/@jest/fake-timers' ]
+66 silly reify mark deleted [ '/opt/parser/node_modules/@jest/globals' ]
+67 silly reify mark deleted [ '/opt/parser/node_modules/@jest/reporters' ]
+68 silly reify mark deleted [ '/opt/parser/node_modules/@jest/schemas' ]
+69 silly reify mark deleted [ '/opt/parser/node_modules/@jest/source-map' ]
+70 silly reify mark deleted [ '/opt/parser/node_modules/@jest/test-result' ]
+71 silly reify mark deleted [ '/opt/parser/node_modules/@jest/test-sequencer' ]
+72 silly reify mark deleted [ '/opt/parser/node_modules/@jest/transform' ]
+73 silly reify mark deleted [ '/opt/parser/node_modules/@jest/types' ]
+74 silly reify mark deleted [ '/opt/parser/node_modules/@jridgewell/gen-mapping' ]
+75 silly reify mark deleted [ '/opt/parser/node_modules/@jridgewell/resolve-uri' ]
+76 silly reify mark deleted [ '/opt/parser/node_modules/@jridgewell/sourcemap-codec' ]
+77 silly reify mark deleted [ '/opt/parser/node_modules/@jridgewell/trace-mapping' ]
+78 silly reify mark deleted [ '/opt/parser/node_modules/@noble/hashes' ]
+79 silly reify mark deleted [ '/opt/parser/node_modules/@paralleldrive/cuid2' ]
+80 silly reify mark deleted [ '/opt/parser/node_modules/@sinclair/typebox' ]
+81 silly reify mark deleted [ '/opt/parser/node_modules/@sinonjs/commons' ]
+82 silly reify mark deleted [ '/opt/parser/node_modules/@sinonjs/fake-timers' ]
+83 silly reify mark deleted [ '/opt/parser/node_modules/@types/babel__core' ]
+84 silly reify mark deleted [ '/opt/parser/node_modules/@types/babel__generator' ]
+85 silly reify mark deleted [ '/opt/parser/node_modules/@types/babel__template' ]
+86 silly reify mark deleted [ '/opt/parser/node_modules/@types/babel__traverse' ]
+87 silly reify mark deleted [ '/opt/parser/node_modules/@types/graceful-fs' ]
+88 silly reify mark deleted [ '/opt/parser/node_modules/@types/istanbul-lib-coverage' ]
+89 silly reify mark deleted [ '/opt/parser/node_modules/@types/istanbul-lib-report' ]
+90 silly reify mark deleted [ '/opt/parser/node_modules/@types/istanbul-reports' ]
+91 silly reify mark deleted [ '/opt/parser/node_modules/@types/node' ]
+92 silly reify mark deleted [ '/opt/parser/node_modules/@types/stack-utils' ]
+93 silly reify mark deleted [ '/opt/parser/node_modules/@types/yargs' ]
+94 silly reify mark deleted [ '/opt/parser/node_modules/@types/yargs-parser' ]
+95 silly reify mark deleted [ '/opt/parser/node_modules/ansi-escapes' ]
+96 silly reify mark deleted [ '/opt/parser/node_modules/ansi-regex' ]
+97 silly reify mark deleted [ '/opt/parser/node_modules/ansi-styles' ]
+98 silly reify mark deleted [ '/opt/parser/node_modules/anymatch' ]
+99 silly reify mark deleted [ '/opt/parser/node_modules/argparse' ]
+100 silly reify mark deleted [ '/opt/parser/node_modules/asap' ]
+101 silly reify mark deleted [ '/opt/parser/node_modules/babel-jest' ]
+102 silly reify mark deleted [ '/opt/parser/node_modules/babel-plugin-istanbul' ]
+103 silly reify mark deleted [
+103 silly reify   '/opt/parser/node_modules/babel-plugin-istanbul/node_modules/istanbul-lib-instrument'
+103 silly reify ]
+104 silly reify mark deleted [
+104 silly reify   '/opt/parser/node_modules/babel-plugin-istanbul/node_modules/semver',
+104 silly reify   '/opt/parser/node_modules/babel-plugin-istanbul/node_modules/.bin/semver'
+104 silly reify ]
+105 silly reify mark deleted [ '/opt/parser/node_modules/babel-plugin-jest-hoist' ]
+106 silly reify mark deleted [ '/opt/parser/node_modules/babel-preset-current-node-syntax' ]
+107 silly reify mark deleted [ '/opt/parser/node_modules/babel-preset-jest' ]
+108 silly reify mark deleted [ '/opt/parser/node_modules/balanced-match' ]
+109 silly reify mark deleted [ '/opt/parser/node_modules/binary-extensions' ]
+110 silly reify mark deleted [ '/opt/parser/node_modules/brace-expansion' ]
+111 silly reify mark deleted [ '/opt/parser/node_modules/braces' ]
+112 silly reify mark deleted [
+112 silly reify   '/opt/parser/node_modules/browserslist',
+112 silly reify   '/opt/parser/node_modules/.bin/browserslist'
+112 silly reify ]
+113 silly reify mark deleted [ '/opt/parser/node_modules/bser' ]
+114 silly reify mark deleted [ '/opt/parser/node_modules/callsites' ]
+115 silly reify mark deleted [ '/opt/parser/node_modules/camelcase' ]
+116 silly reify mark deleted [ '/opt/parser/node_modules/caniuse-lite' ]
+117 silly reify mark deleted [ '/opt/parser/node_modules/chalk' ]
+118 silly reify mark deleted [ '/opt/parser/node_modules/char-regex' ]
+119 silly reify mark deleted [ '/opt/parser/node_modules/chokidar' ]
+120 silly reify mark deleted [ '/opt/parser/node_modules/ci-info' ]
+121 silly reify mark deleted [ '/opt/parser/node_modules/cjs-module-lexer' ]
+122 silly reify mark deleted [ '/opt/parser/node_modules/cliui' ]
+123 silly reify mark deleted [ '/opt/parser/node_modules/co' ]
+124 silly reify mark deleted [ '/opt/parser/node_modules/collect-v8-coverage' ]
+125 silly reify mark deleted [ '/opt/parser/node_modules/component-emitter' ]
+126 silly reify mark deleted [ '/opt/parser/node_modules/concat-map' ]
+127 silly reify mark deleted [ '/opt/parser/node_modules/convert-source-map' ]
+128 silly reify mark deleted [ '/opt/parser/node_modules/cookiejar' ]
+129 silly reify mark deleted [
+129 silly reify   '/opt/parser/node_modules/create-jest',
+129 silly reify   '/opt/parser/node_modules/.bin/create-jest'
+129 silly reify ]
+130 silly reify mark deleted [ '/opt/parser/node_modules/cross-spawn' ]
+131 silly reify mark deleted [ '/opt/parser/node_modules/dedent' ]
+132 silly reify mark deleted [ '/opt/parser/node_modules/deepmerge' ]
+133 silly reify mark deleted [ '/opt/parser/node_modules/detect-newline' ]
+134 silly reify mark deleted [ '/opt/parser/node_modules/dezalgo' ]
+135 silly reify mark deleted [ '/opt/parser/node_modules/diff-sequences' ]
+136 silly reify mark deleted [ '/opt/parser/node_modules/electron-to-chromium' ]
+137 silly reify mark deleted [ '/opt/parser/node_modules/emittery' ]
+138 silly reify mark deleted [ '/opt/parser/node_modules/emoji-regex' ]
+139 silly reify mark deleted [ '/opt/parser/node_modules/error-ex' ]
+140 silly reify mark deleted [ '/opt/parser/node_modules/escalade' ]
+141 silly reify mark deleted [ '/opt/parser/node_modules/escape-string-regexp' ]
+142 silly reify mark deleted [
+142 silly reify   '/opt/parser/node_modules/esprima',
+142 silly reify   '/opt/parser/node_modules/.bin/esparse',
+142 silly reify   '/opt/parser/node_modules/.bin/esvalidate'
+142 silly reify ]
+143 silly reify mark deleted [ '/opt/parser/node_modules/execa' ]
+144 silly reify mark deleted [ '/opt/parser/node_modules/exit' ]
+145 silly reify mark deleted [ '/opt/parser/node_modules/expect' ]
+146 silly reify mark deleted [ '/opt/parser/node_modules/fast-json-stable-stringify' ]
+147 silly reify mark deleted [ '/opt/parser/node_modules/fast-safe-stringify' ]
+148 silly reify mark deleted [ '/opt/parser/node_modules/fb-watchman' ]
+149 silly reify mark deleted [ '/opt/parser/node_modules/fill-range' ]
+150 silly reify mark deleted [ '/opt/parser/node_modules/find-up' ]
+151 silly reify mark deleted [ '/opt/parser/node_modules/formidable' ]
+152 silly reify mark deleted [ '/opt/parser/node_modules/fs.realpath' ]
+153 silly reify mark deleted [ '/opt/parser/node_modules/fsevents' ]
+154 silly reify mark deleted [ '/opt/parser/node_modules/gensync' ]
+155 silly reify mark deleted [ '/opt/parser/node_modules/get-caller-file' ]
+156 silly reify mark deleted [ '/opt/parser/node_modules/get-package-type' ]
+157 silly reify mark deleted [ '/opt/parser/node_modules/get-stream' ]
+158 silly reify mark deleted [ '/opt/parser/node_modules/glob' ]
+159 silly reify mark deleted [ '/opt/parser/node_modules/glob-parent' ]
+160 silly reify mark deleted [ '/opt/parser/node_modules/has-flag' ]
+161 silly reify mark deleted [ '/opt/parser/node_modules/html-escaper' ]
+162 silly reify mark deleted [ '/opt/parser/node_modules/human-signals' ]
+163 silly reify mark deleted [ '/opt/parser/node_modules/ignore-by-default' ]
+164 silly reify mark deleted [
+164 silly reify   '/opt/parser/node_modules/import-local',
+164 silly reify   '/opt/parser/node_modules/.bin/import-local-fixture'
+164 silly reify ]
+165 silly reify mark deleted [ '/opt/parser/node_modules/imurmurhash' ]
+166 silly reify mark deleted [ '/opt/parser/node_modules/inflight' ]
+167 silly reify mark deleted [ '/opt/parser/node_modules/is-arrayish' ]
+168 silly reify mark deleted [ '/opt/parser/node_modules/is-binary-path' ]
+169 silly reify mark deleted [ '/opt/parser/node_modules/is-core-module' ]
+170 silly reify mark deleted [ '/opt/parser/node_modules/is-extglob' ]
+171 silly reify mark deleted [ '/opt/parser/node_modules/is-fullwidth-code-point' ]
+172 silly reify mark deleted [ '/opt/parser/node_modules/is-generator-fn' ]
+173 silly reify mark deleted [ '/opt/parser/node_modules/is-glob' ]
+174 silly reify mark deleted [ '/opt/parser/node_modules/is-number' ]
+175 silly reify mark deleted [ '/opt/parser/node_modules/isexe' ]
+176 silly reify mark deleted [ '/opt/parser/node_modules/istanbul-lib-coverage' ]
+177 silly reify mark deleted [ '/opt/parser/node_modules/istanbul-lib-instrument' ]
+178 silly reify mark deleted [ '/opt/parser/node_modules/istanbul-lib-report' ]
+179 silly reify mark deleted [ '/opt/parser/node_modules/istanbul-lib-source-maps' ]
+180 silly reify mark deleted [
+180 silly reify   '/opt/parser/node_modules/istanbul-lib-source-maps/node_modules/debug'
+180 silly reify ]
+181 silly reify mark deleted [ '/opt/parser/node_modules/istanbul-lib-source-maps/node_modules/ms' ]
+182 silly reify mark deleted [ '/opt/parser/node_modules/istanbul-reports' ]
+183 silly reify mark deleted [
+183 silly reify   '/opt/parser/node_modules/jest',
+183 silly reify   '/opt/parser/node_modules/.bin/jest'
+183 silly reify ]
+184 silly reify mark deleted [ '/opt/parser/node_modules/jest-changed-files' ]
+185 silly reify mark deleted [ '/opt/parser/node_modules/jest-circus' ]
+186 silly reify mark deleted [
+186 silly reify   '/opt/parser/node_modules/jest-cli',
+186 silly reify   '/opt/parser/node_modules/.bin/jest'
+186 silly reify ]
+187 silly reify mark deleted [ '/opt/parser/node_modules/jest-config' ]
+188 silly reify mark deleted [ '/opt/parser/node_modules/jest-diff' ]
+189 silly reify mark deleted [ '/opt/parser/node_modules/jest-docblock' ]
+190 silly reify mark deleted [ '/opt/parser/node_modules/jest-each' ]
+191 silly reify mark deleted [ '/opt/parser/node_modules/jest-environment-node' ]
+192 silly reify mark deleted [ '/opt/parser/node_modules/jest-get-type' ]
+193 silly reify mark deleted [ '/opt/parser/node_modules/jest-haste-map' ]
+194 silly reify mark deleted [ '/opt/parser/node_modules/jest-leak-detector' ]
+195 silly reify mark deleted [ '/opt/parser/node_modules/jest-matcher-utils' ]
+196 silly reify mark deleted [ '/opt/parser/node_modules/jest-message-util' ]
+197 silly reify mark deleted [ '/opt/parser/node_modules/jest-mock' ]
+198 silly reify mark deleted [ '/opt/parser/node_modules/jest-pnp-resolver' ]
+199 silly reify mark deleted [ '/opt/parser/node_modules/jest-regex-util' ]
+200 silly reify mark deleted [ '/opt/parser/node_modules/jest-resolve' ]
+201 silly reify mark deleted [ '/opt/parser/node_modules/jest-resolve-dependencies' ]
+202 silly reify mark deleted [ '/opt/parser/node_modules/jest-runner' ]
+203 silly reify mark deleted [ '/opt/parser/node_modules/jest-runtime' ]
+204 silly reify mark deleted [ '/opt/parser/node_modules/jest-snapshot' ]
+205 silly reify mark deleted [ '/opt/parser/node_modules/jest-util' ]
+206 silly reify mark deleted [ '/opt/parser/node_modules/jest-validate' ]
+207 silly reify mark deleted [ '/opt/parser/node_modules/jest-validate/node_modules/camelcase' ]
+208 silly reify mark deleted [ '/opt/parser/node_modules/jest-watcher' ]
+209 silly reify mark deleted [ '/opt/parser/node_modules/jest-worker' ]
+210 silly reify mark deleted [ '/opt/parser/node_modules/jest-worker/node_modules/supports-color' ]
+211 silly reify mark deleted [ '/opt/parser/node_modules/js-tokens' ]
+212 silly reify mark deleted [
+212 silly reify   '/opt/parser/node_modules/js-yaml',
+212 silly reify   '/opt/parser/node_modules/.bin/js-yaml'
+212 silly reify ]
+213 silly reify mark deleted [
+213 silly reify   '/opt/parser/node_modules/jsesc',
+213 silly reify   '/opt/parser/node_modules/.bin/jsesc'
+213 silly reify ]
+214 silly reify mark deleted [ '/opt/parser/node_modules/json-parse-even-better-errors' ]
+215 silly reify mark deleted [
+215 silly reify   '/opt/parser/node_modules/json5',
+215 silly reify   '/opt/parser/node_modules/.bin/json5'
+215 silly reify ]
+216 silly reify mark deleted [ '/opt/parser/node_modules/kleur' ]
+217 silly reify mark deleted [ '/opt/parser/node_modules/leven' ]
+218 silly reify mark deleted [ '/opt/parser/node_modules/lines-and-columns' ]
+219 silly reify mark deleted [ '/opt/parser/node_modules/locate-path' ]
+220 silly reify mark deleted [ '/opt/parser/node_modules/lru-cache' ]
+221 silly reify mark deleted [ '/opt/parser/node_modules/make-dir' ]
+222 silly reify mark deleted [ '/opt/parser/node_modules/makeerror' ]
+223 silly reify mark deleted [ '/opt/parser/node_modules/merge-stream' ]
+224 silly reify mark deleted [ '/opt/parser/node_modules/micromatch' ]
+225 silly reify mark deleted [ '/opt/parser/node_modules/mimic-fn' ]
+226 silly reify mark deleted [ '/opt/parser/node_modules/minimatch' ]
+227 silly reify mark deleted [ '/opt/parser/node_modules/natural-compare' ]
+228 silly reify mark deleted [ '/opt/parser/node_modules/node-int64' ]
+229 silly reify mark deleted [ '/opt/parser/node_modules/node-releases' ]
+230 silly reify mark deleted [
+230 silly reify   '/opt/parser/node_modules/nodemon',
+230 silly reify   '/opt/parser/node_modules/.bin/nodemon'
+230 silly reify ]
+231 silly reify mark deleted [ '/opt/parser/node_modules/nodemon/node_modules/debug' ]
+232 silly reify mark deleted [ '/opt/parser/node_modules/nodemon/node_modules/has-flag' ]
+233 silly reify mark deleted [ '/opt/parser/node_modules/nodemon/node_modules/ms' ]
+234 silly reify mark deleted [ '/opt/parser/node_modules/nodemon/node_modules/supports-color' ]
+235 silly reify mark deleted [ '/opt/parser/node_modules/normalize-path' ]
+236 silly reify mark deleted [ '/opt/parser/node_modules/npm-run-path' ]
+237 silly reify mark deleted [ '/opt/parser/node_modules/onetime' ]
+238 silly reify mark deleted [ '/opt/parser/node_modules/p-limit' ]
+239 silly reify mark deleted [ '/opt/parser/node_modules/p-locate' ]
+240 silly reify mark deleted [ '/opt/parser/node_modules/p-locate/node_modules/p-limit' ]
+241 silly reify mark deleted [ '/opt/parser/node_modules/p-try' ]
+242 silly reify mark deleted [ '/opt/parser/node_modules/parse-json' ]
+243 silly reify mark deleted [ '/opt/parser/node_modules/path-exists' ]
+244 silly reify mark deleted [ '/opt/parser/node_modules/path-is-absolute' ]
+245 silly reify mark deleted [ '/opt/parser/node_modules/path-key' ]
+246 silly reify mark deleted [ '/opt/parser/node_modules/path-parse' ]
+247 silly reify mark deleted [ '/opt/parser/node_modules/picocolors' ]
+248 silly reify mark deleted [ '/opt/parser/node_modules/picomatch' ]
+249 silly reify mark deleted [ '/opt/parser/node_modules/pirates' ]
+250 silly reify mark deleted [ '/opt/parser/node_modules/pkg-dir' ]
+251 silly reify mark deleted [ '/opt/parser/node_modules/pretty-format' ]
+252 silly reify mark deleted [ '/opt/parser/node_modules/pretty-format/node_modules/ansi-styles' ]
+253 silly reify mark deleted [ '/opt/parser/node_modules/prompts' ]
+254 silly reify mark deleted [ '/opt/parser/node_modules/pstree.remy' ]
+255 silly reify mark deleted [ '/opt/parser/node_modules/pure-rand' ]
+256 silly reify mark deleted [ '/opt/parser/node_modules/react-is' ]
+257 silly reify mark deleted [ '/opt/parser/node_modules/readdirp' ]
+258 silly reify mark deleted [ '/opt/parser/node_modules/require-directory' ]
+259 silly reify mark deleted [
+259 silly reify   '/opt/parser/node_modules/resolve',
+259 silly reify   '/opt/parser/node_modules/.bin/resolve'
+259 silly reify ]
+260 silly reify mark deleted [ '/opt/parser/node_modules/resolve-cwd' ]
+261 silly reify mark deleted [ '/opt/parser/node_modules/resolve-from' ]
+262 silly reify mark deleted [ '/opt/parser/node_modules/resolve.exports' ]
+263 silly reify mark deleted [ '/opt/parser/node_modules/shebang-command' ]
+264 silly reify mark deleted [ '/opt/parser/node_modules/shebang-regex' ]
+265 silly reify mark deleted [ '/opt/parser/node_modules/signal-exit' ]
+266 silly reify mark deleted [ '/opt/parser/node_modules/simple-update-notifier' ]
+267 silly reify mark deleted [ '/opt/parser/node_modules/sisteransi' ]
+268 silly reify mark deleted [ '/opt/parser/node_modules/slash' ]
+269 silly reify mark deleted [ '/opt/parser/node_modules/source-map' ]
+270 silly reify mark deleted [ '/opt/parser/node_modules/source-map-support' ]
+271 silly reify mark deleted [ '/opt/parser/node_modules/sprintf-js' ]
+272 silly reify mark deleted [ '/opt/parser/node_modules/stack-utils' ]
+273 silly reify mark deleted [ '/opt/parser/node_modules/string-length' ]
+274 silly reify mark deleted [ '/opt/parser/node_modules/string-width' ]
+275 silly reify mark deleted [ '/opt/parser/node_modules/strip-ansi' ]
+276 silly reify mark deleted [ '/opt/parser/node_modules/strip-bom' ]
+277 silly reify mark deleted [ '/opt/parser/node_modules/strip-final-newline' ]
+278 silly reify mark deleted [ '/opt/parser/node_modules/strip-json-comments' ]
+279 silly reify mark deleted [ '/opt/parser/node_modules/superagent' ]
+280 silly reify mark deleted [ '/opt/parser/node_modules/superagent/node_modules/debug' ]
+281 silly reify mark deleted [
+281 silly reify   '/opt/parser/node_modules/superagent/node_modules/mime',
+281 silly reify   '/opt/parser/node_modules/superagent/node_modules/.bin/mime'
+281 silly reify ]
+282 silly reify mark deleted [ '/opt/parser/node_modules/superagent/node_modules/ms' ]
+283 silly reify mark deleted [ '/opt/parser/node_modules/supertest' ]
+284 silly reify mark deleted [ '/opt/parser/node_modules/supports-color' ]
+285 silly reify mark deleted [ '/opt/parser/node_modules/supports-preserve-symlinks-flag' ]
+286 silly reify mark deleted [ '/opt/parser/node_modules/test-exclude' ]
+287 silly reify mark deleted [ '/opt/parser/node_modules/tmpl' ]
+288 silly reify mark deleted [ '/opt/parser/node_modules/to-regex-range' ]
+289 silly reify mark deleted [
+289 silly reify   '/opt/parser/node_modules/touch',
+289 silly reify   '/opt/parser/node_modules/.bin/nodetouch'
+289 silly reify ]
+290 silly reify mark deleted [ '/opt/parser/node_modules/type-detect' ]
+291 silly reify mark deleted [ '/opt/parser/node_modules/type-fest' ]
+292 silly reify mark deleted [ '/opt/parser/node_modules/undefsafe' ]
+293 silly reify mark deleted [ '/opt/parser/node_modules/undici-types' ]
+294 silly reify mark deleted [
+294 silly reify   '/opt/parser/node_modules/update-browserslist-db',
+294 silly reify   '/opt/parser/node_modules/.bin/update-browserslist-db'
+294 silly reify ]
+295 silly reify mark deleted [ '/opt/parser/node_modules/v8-to-istanbul' ]
+296 silly reify mark deleted [ '/opt/parser/node_modules/walker' ]
+297 silly reify mark deleted [
+297 silly reify   '/opt/parser/node_modules/which',
+297 silly reify   '/opt/parser/node_modules/.bin/node-which'
+297 silly reify ]
+298 silly reify mark deleted [ '/opt/parser/node_modules/wrap-ansi' ]
+299 silly reify mark deleted [ '/opt/parser/node_modules/write-file-atomic' ]
+300 silly reify mark deleted [ '/opt/parser/node_modules/y18n' ]
+301 silly reify mark deleted [ '/opt/parser/node_modules/yallist' ]
+302 silly reify mark deleted [ '/opt/parser/node_modules/yargs' ]
+303 silly reify mark deleted [ '/opt/parser/node_modules/yargs-parser' ]
+304 silly reify mark deleted [ '/opt/parser/node_modules/yocto-queue' ]
+305 silly audit bulk request {
+305 silly audit   debug: [ '2.6.9', '4.4.1' ],
+305 silly audit   ms: [ '2.1.3', '2.0.0' ],
+305 silly audit   semver: [ '7.7.2' ],
+305 silly audit   '@colors/colors': [ '1.6.0' ],
+305 silly audit   '@dabh/diagnostics': [ '2.0.3' ],
+305 silly audit   '@ioredis/commands': [ '1.3.0' ],
+305 silly audit   '@msgpackr-extract/msgpackr-extract-darwin-arm64': [ '3.0.3' ],
+305 silly audit   '@msgpackr-extract/msgpackr-extract-darwin-x64': [ '3.0.3' ],
+305 silly audit   '@msgpackr-extract/msgpackr-extract-linux-arm': [ '3.0.3' ],
+305 silly audit   '@msgpackr-extract/msgpackr-extract-linux-arm64': [ '3.0.3' ],
+305 silly audit   '@msgpackr-extract/msgpackr-extract-linux-x64': [ '3.0.3' ],
+305 silly audit   '@msgpackr-extract/msgpackr-extract-win32-x64': [ '3.0.3' ],
+305 silly audit   '@pdf-lib/standard-fonts': [ '1.0.0' ],
+305 silly audit   '@pdf-lib/upng': [ '1.0.1' ],
+305 silly audit   '@types/triple-beam': [ '1.3.5' ],
+305 silly audit   accepts: [ '1.3.8' ],
+305 silly audit   negotiator: [ '0.6.3', '0.6.4' ],
+305 silly audit   'append-field': [ '1.0.0' ],
+305 silly audit   'array-flatten': [ '1.1.1' ],
+305 silly audit   async: [ '3.2.6' ],
+305 silly audit   asynckit: [ '0.4.0' ],
+305 silly audit   b4a: [ '1.6.7' ],
+305 silly audit   'bare-events': [ '2.6.1' ],
+305 silly audit   'bare-fs': [ '4.2.1' ],
+305 silly audit   'bare-os': [ '3.6.2' ],
+305 silly audit   'bare-path': [ '3.0.0' ],
+305 silly audit   'bare-stream': [ '2.7.0' ],
+305 silly audit   'base64-js': [ '1.5.1' ],
+305 silly audit   'basic-auth': [ '2.0.1' ],
+305 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+305 silly audit   bl: [ '4.1.0' ],
+305 silly audit   'readable-stream': [ '3.6.2', '2.3.8' ],
+305 silly audit   'body-parser': [ '1.20.3' ],
+305 silly audit   buffer: [ '5.7.1' ],
+305 silly audit   'buffer-from': [ '1.1.2' ],
+305 silly audit   bull: [ '4.16.5' ],
+305 silly audit   uuid: [ '8.3.2', '9.0.1' ],
+305 silly audit   busboy: [ '1.6.0' ],
+305 silly audit   bytes: [ '3.1.2' ],
+305 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+305 silly audit   'call-bound': [ '1.0.4' ],
+305 silly audit   chownr: [ '1.1.4' ],
+305 silly audit   'cluster-key-slot': [ '1.1.2' ],
+305 silly audit   color: [ '4.2.3', '3.2.1' ],
+305 silly audit   'color-convert': [ '2.0.1', '1.9.3' ],
+305 silly audit   'color-name': [ '1.1.4', '1.1.3' ],
+305 silly audit   'color-string': [ '1.9.1' ],
+305 silly audit   colorspace: [ '1.1.4' ],
+305 silly audit   'combined-stream': [ '1.0.8' ],
+305 silly audit   compressible: [ '2.0.18' ],
+305 silly audit   compression: [ '1.8.1' ],
+305 silly audit   'concat-stream': [ '1.6.2' ],
+305 silly audit   'content-disposition': [ '0.5.4' ],
+305 silly audit   'content-type': [ '1.0.5' ],
+305 silly audit   cookie: [ '0.7.1' ],
+305 silly audit   'cookie-signature': [ '1.0.6' ],
+305 silly audit   'core-util-is': [ '1.0.3' ],
+305 silly audit   cors: [ '2.8.5' ],
+305 silly audit   'cron-parser': [ '4.9.0' ],
+305 silly audit   'decompress-response': [ '6.0.0' ],
+305 silly audit   'deep-extend': [ '0.6.0' ],
+305 silly audit   'delayed-stream': [ '1.0.0' ],
+305 silly audit   denque: [ '2.1.0' ],
+305 silly audit   depd: [ '2.0.0' ],
+305 silly audit   destroy: [ '1.2.0' ],
+305 silly audit   'detect-libc': [ '2.0.4' ],
+305 silly audit   dotenv: [ '16.6.1' ],
+305 silly audit   'dunder-proto': [ '1.0.1' ],
+305 silly audit   'ee-first': [ '1.1.1' ],
+305 silly audit   enabled: [ '2.0.0' ],
+305 silly audit   encodeurl: [ '2.0.0', '1.0.2' ],
+305 silly audit   'end-of-stream': [ '1.4.5' ],
+305 silly audit   'es-define-property': [ '1.0.1' ],
+305 silly audit   'es-errors': [ '1.3.0' ],
+305 silly audit   'es-object-atoms': [ '1.1.1' ],
+305 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+305 silly audit   'escape-html': [ '1.0.3' ],
+305 silly audit   etag: [ '1.8.1' ],
+305 silly audit   'expand-template': [ '2.0.3' ],
+305 silly audit   express: [ '4.21.2' ],
+305 silly audit   'fast-fifo': [ '1.3.2' ],
+305 silly audit   fecha: [ '4.2.3' ],
+305 silly audit   finalhandler: [ '1.3.1' ],
+305 silly audit   'fn.name': [ '1.1.0' ],
+305 silly audit   'form-data': [ '4.0.4' ],
+305 silly audit   forwarded: [ '0.2.0' ],
+305 silly audit   fresh: [ '0.5.2' ],
+305 silly audit   'fs-constants': [ '1.0.0' ],
+305 silly audit   'fs-extra': [ '11.3.1' ],
+305 silly audit   'function-bind': [ '1.1.2' ],
+305 silly audit   'get-intrinsic': [ '1.3.0' ],
+305 silly audit   'get-port': [ '5.1.1' ],
+305 silly audit   'get-proto': [ '1.0.1' ],
+305 silly audit   'github-from-package': [ '0.0.0' ],
+305 silly audit   gopd: [ '1.2.0' ],
+305 silly audit   'graceful-fs': [ '4.2.11' ],
+305 silly audit   'has-symbols': [ '1.1.0' ],
+305 silly audit   'has-tostringtag': [ '1.0.2' ],
+305 silly audit   hasown: [ '2.0.2' ],
+305 silly audit   helmet: [ '7.2.0' ],
+305 silly audit   'http-errors': [ '2.0.0' ],
+305 silly audit   'iconv-lite': [ '0.4.24' ],
+305 silly audit   ieee754: [ '1.2.1' ],
+305 silly audit   inherits: [ '2.0.4' ],
+305 silly audit   ini: [ '1.3.8' ],
+305 silly audit   ioredis: [ '5.7.0' ],
+305 silly audit   'ipaddr.js': [ '1.9.1' ],
+305 silly audit   'is-arrayish': [ '0.3.2' ],
+305 silly audit   'is-stream': [ '2.0.1' ],
+305 silly audit   isarray: [ '1.0.0' ],
+305 silly audit   jsonfile: [ '6.2.0' ],
+305 silly audit   kuler: [ '2.0.0' ],
+305 silly audit   lodash: [ '4.17.21' ],
+305 silly audit   'lodash.defaults': [ '4.2.0' ],
+305 silly audit   'lodash.isarguments': [ '3.1.0' ],
+305 silly audit   logform: [ '2.7.0' ],
+305 silly audit   luxon: [ '3.7.1' ],
+305 silly audit   'math-intrinsics': [ '1.1.0' ],
+305 silly audit   'media-typer': [ '0.3.0' ],
+305 silly audit   'merge-descriptors': [ '1.0.3' ],
+305 silly audit   methods: [ '1.1.2' ],
+305 silly audit   mime: [ '1.6.0' ],
+305 silly audit   'mime-db': [ '1.54.0', '1.52.0' ],
+305 silly audit   'mime-types': [ '2.1.35' ],
+305 silly audit   'mimic-response': [ '3.1.0' ],
+305 silly audit   minimist: [ '1.2.8' ],
+305 silly audit   mkdirp: [ '0.5.6' ],
+305 silly audit   'mkdirp-classic': [ '0.5.3' ],
+305 silly audit   morgan: [ '1.10.1' ],
+305 silly audit   'on-finished': [ '2.3.0', '2.4.1' ],
+305 silly audit   msgpackr: [ '1.11.5' ],
+305 silly audit   'msgpackr-extract': [ '3.0.3' ],
+305 silly audit   multer: [ '1.4.5-lts.2' ],
+305 silly audit   'napi-build-utils': [ '2.0.0' ],
+305 silly audit   'node-abi': [ '3.75.0' ],
+305 silly audit   'node-addon-api': [ '6.1.0' ],
+305 silly audit   'node-cron': [ '3.0.3' ],
+305 silly audit   'node-gyp-build-optional-packages': [ '5.2.2' ],
+305 silly audit   'object-assign': [ '4.1.1' ],
+305 silly audit   'object-inspect': [ '1.13.4' ],
+305 silly audit   'on-headers': [ '1.1.0' ],
+305 silly audit   once: [ '1.4.0' ],
+305 silly audit   'one-time': [ '1.0.0' ],
+305 silly audit   pako: [ '1.0.11' ],
+305 silly audit   parseurl: [ '1.3.3' ],
+305 silly audit   'path-to-regexp': [ '0.1.12' ],
+305 silly audit   'pdf-lib': [ '1.17.1' ],
+305 silly audit   pngjs: [ '7.0.0' ],
+305 silly audit   'prebuild-install': [ '7.1.3' ],
+305 silly audit   'tar-fs': [ '2.1.3', '3.1.0' ],
+305 silly audit   'tar-stream': [ '2.2.0', '3.1.7' ],
+305 silly audit   'process-nextick-args': [ '2.0.1' ],
+305 silly audit   'proxy-addr': [ '2.0.7' ],
+305 silly audit   pump: [ '3.0.3' ],
+305 silly audit   qs: [ '6.13.0' ],
+305 silly audit   'range-parser': [ '1.2.1' ],
+305 silly audit   'raw-body': [ '2.5.2' ],
+305 silly audit   rc: [ '1.2.8' ],
+305 silly audit   'strip-json-comments': [ '2.0.1' ],
+305 silly audit   'redis-errors': [ '1.2.0' ],
+305 silly audit   'redis-parser': [ '3.0.0' ],
+305 silly audit   'safe-stable-stringify': [ '2.5.0' ],
+305 silly audit   'safer-buffer': [ '2.1.2' ],
+305 silly audit   send: [ '0.19.0' ],
+305 silly audit   'serve-static': [ '1.16.2' ],
+305 silly audit   setprototypeof: [ '1.2.0' ],
+305 silly audit   sharp: [ '0.32.6' ],
+305 silly audit   'side-channel': [ '1.1.0' ],
+305 silly audit   'side-channel-list': [ '1.0.0' ],
+305 silly audit   'side-channel-map': [ '1.0.1' ],
+305 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+305 silly audit   'simple-concat': [ '1.0.1' ],
+305 silly audit   'simple-get': [ '4.0.1' ],
+305 silly audit   'simple-swizzle': [ '0.2.2' ],
+305 silly audit   'stack-trace': [ '0.0.10' ],
+305 silly audit   'standard-as-callback': [ '2.1.0' ],
+305 silly audit   statuses: [ '2.0.1' ],
+305 silly audit   streamsearch: [ '1.1.0' ],
+305 silly audit   streamx: [ '2.22.1' ],
+305 silly audit   string_decoder: [ '1.1.1' ],
+305 silly audit   'text-decoder': [ '1.2.3' ],
+305 silly audit   'text-hex': [ '1.0.0' ],
+305 silly audit   toidentifier: [ '1.0.1' ],
+305 silly audit   'triple-beam': [ '1.4.1' ],
+305 silly audit   tslib: [ '1.14.1' ],
+305 silly audit   'tunnel-agent': [ '0.6.0' ],
+305 silly audit   'type-is': [ '1.6.18' ],
+305 silly audit   typedarray: [ '0.0.6' ],
+305 silly audit   universalify: [ '2.0.1' ],
+305 silly audit   unpipe: [ '1.0.0' ],
+305 silly audit   'util-deprecate': [ '1.0.2' ],
+305 silly audit   'utils-merge': [ '1.0.1' ],
+305 silly audit   vary: [ '1.1.2' ],
+305 silly audit   winston: [ '3.17.0' ],
+305 silly audit   'winston-transport': [ '4.9.0' ],
+305 silly audit   wrappy: [ '1.0.2' ],
+305 silly audit   xtend: [ '4.0.2' ]
+305 silly audit }
+306 verbose reify failed optional dependency /opt/parser/node_modules/@msgpackr-extract/msgpackr-extract-win32-x64
+307 silly reify mark deleted [
+307 silly reify   '/opt/parser/node_modules/@msgpackr-extract/msgpackr-extract-win32-x64'
+307 silly reify ]
+308 verbose reify failed optional dependency /opt/parser/node_modules/@msgpackr-extract/msgpackr-extract-linux-arm64
+309 silly reify mark deleted [
+309 silly reify   '/opt/parser/node_modules/@msgpackr-extract/msgpackr-extract-linux-arm64'
+309 silly reify ]
+310 verbose reify failed optional dependency /opt/parser/node_modules/@msgpackr-extract/msgpackr-extract-linux-arm
+311 silly reify mark deleted [
+311 silly reify   '/opt/parser/node_modules/@msgpackr-extract/msgpackr-extract-linux-arm'
+311 silly reify ]
+312 verbose reify failed optional dependency /opt/parser/node_modules/@msgpackr-extract/msgpackr-extract-darwin-x64
+313 silly reify mark deleted [
+313 silly reify   '/opt/parser/node_modules/@msgpackr-extract/msgpackr-extract-darwin-x64'
+313 silly reify ]
+314 verbose reify failed optional dependency /opt/parser/node_modules/@msgpackr-extract/msgpackr-extract-darwin-arm64
+315 silly reify mark deleted [
+315 silly reify   '/opt/parser/node_modules/@msgpackr-extract/msgpackr-extract-darwin-arm64'
+315 silly reify ]
+316 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 298ms
+317 silly audit report {}
+318 silly ADD
+319 silly ADD
+320 silly ADD
+321 silly ADD
+322 silly ADD
+323 silly ADD
+324 verbose cwd /opt/parser
+325 verbose os Linux 6.8.0-1035-aws
+326 verbose node v22.19.0
+327 verbose npm  v10.9.3
+328 verbose exit 0
+329 info ok

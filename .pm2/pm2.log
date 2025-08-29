@@ -1,0 +1,912 @@
+2025-08-29T00:18:06: PM2 log: ===============================================================================
+2025-08-29T00:18:06: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T00:18:06: PM2 log: Time                 : Fri Aug 29 2025 00:18:06 GMT+0000 (Coordinated Universal Time)
+2025-08-29T00:18:06: PM2 log: PM2 version          : 6.0.8
+2025-08-29T00:18:06: PM2 log: Node.js version      : 22.19.0
+2025-08-29T00:18:06: PM2 log: Current arch         : x64
+2025-08-29T00:18:06: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T00:18:06: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T00:18:06: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T00:18:06: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T00:18:06: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T00:18:06: PM2 log: Worker Interval      : 30000
+2025-08-29T00:18:06: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T00:18:06: PM2 log: Concurrent actions   : 2
+2025-08-29T00:18:06: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T00:18:06: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T00:18:06: PM2 log: ===============================================================================
+2025-08-29T00:23:51: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T00:23:51: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:51: PM2 log: App [parser-api:0] online
+2025-08-29T00:23:51: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:51: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:51: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:51: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:52: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:52: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:52: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:52: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:52: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:52: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:52: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:52: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:52: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:53: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:53: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:53: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:53: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:53: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:53: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:53: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:53: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:53: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:54: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:54: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:54: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:54: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:54: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:54: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:55: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:55: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:55: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:55: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:55: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:55: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:55: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:55: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:55: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:56: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:56: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:56: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:56: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:56: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:56: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:56: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:56: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:23:56: PM2 log: App [parser-worker:1] online
+2025-08-29T00:23:57: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:23:57: PM2 log: Script /opt/parser/src/worker.js had too many unstable restarts (16). Stopped. "errored"
+2025-08-29T00:27:25: PM2 log: Stopping app:parser-api id:0
+2025-08-29T00:27:25: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:25: PM2 log: pid=137510 msg=process killed
+2025-08-29T00:27:25: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T00:27:25: PM2 log: App [parser-api:0] online
+2025-08-29T00:27:25: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:25: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:26: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:26: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:26: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:26: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:26: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:26: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:27: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:27: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:27: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:27: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:27: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:27: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:27: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:27: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:27: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:28: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:28: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:28: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:28: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:28: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:28: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:28: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:28: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:28: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:29: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:29: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:29: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:29: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:29: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:29: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:29: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:29: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:29: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:30: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:30: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:30: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:30: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:30: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:30: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:31: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:31: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:31: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:31: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:31: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:27:31: PM2 log: App [parser-worker:1] online
+2025-08-29T00:27:31: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:27:31: PM2 log: Script /opt/parser/src/worker.js had too many unstable restarts (16). Stopped. "errored"
+2025-08-29T00:32:31: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:31: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:31: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:31: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:31: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:32: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:32: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:32: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:32: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:32: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:32: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:33: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:33: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:33: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:33: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:33: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:33: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:34: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:34: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:34: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:34: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:34: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:34: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:34: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:34: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:34: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:35: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:35: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:35: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:35: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:35: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:35: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:36: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:36: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:36: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:36: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:36: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:36: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:37: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:37: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:37: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:37: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:37: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:37: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:37: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:37: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:37: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:38: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:38: PM2 log: Script /opt/parser/src/worker.js had too many unstable restarts (16). Stopped. "errored"
+2025-08-29T00:32:48: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:48: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:49: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:49: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:49: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:49: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:49: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:49: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:49: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:49: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:49: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:50: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:50: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:50: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:50: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:50: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:50: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:51: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:51: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:51: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:51: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:51: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:51: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:52: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:52: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:52: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:52: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:52: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:52: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:52: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:52: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:52: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:53: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:53: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:53: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:53: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:53: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:53: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:54: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:54: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:54: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:54: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:54: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:54: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:55: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:55: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:32:55: PM2 log: App [parser-worker:1] online
+2025-08-29T00:32:55: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:32:55: PM2 log: Script /opt/parser/src/worker.js had too many unstable restarts (16). Stopped. "errored"
+2025-08-29T00:33:19: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:19: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:19: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:19: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:19: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:20: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:20: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:20: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:20: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:20: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:20: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:21: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:21: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:21: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:21: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:21: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:21: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:22: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:22: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:22: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:22: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:22: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:22: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:22: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:22: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:22: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:23: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:23: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:23: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:23: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:23: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:23: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:24: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:24: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:24: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:24: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:24: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:24: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:25: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:25: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:25: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:25: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:25: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:25: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:25: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:25: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:33:26: PM2 log: App [parser-worker:1] online
+2025-08-29T00:33:26: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:33:26: PM2 log: Script /opt/parser/src/worker.js had too many unstable restarts (16). Stopped. "errored"
+2025-08-29T00:35:23: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:23: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:24: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:24: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:24: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:24: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:24: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:24: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:25: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:25: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:25: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:25: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:25: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:25: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:26: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:26: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:26: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:26: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:26: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:26: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:26: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:26: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:26: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:27: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:27: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:27: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:27: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:27: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:27: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:28: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:28: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:28: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:28: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:28: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:28: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:29: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:29: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:29: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:29: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:29: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:29: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:29: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:29: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:29: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:30: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:30: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:30: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:30: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:30: PM2 log: Script /opt/parser/src/worker.js had too many unstable restarts (16). Stopped. "errored"
+2025-08-29T00:35:34: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:34: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:34: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:34: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:34: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:34: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:34: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:35: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:35: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:35: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:35: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:35: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:35: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:35: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:36: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:36: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:36: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:36: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:36: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:36: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:37: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:37: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:37: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:37: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:37: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:37: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:38: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:38: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:38: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:38: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:38: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:38: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:38: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:38: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:38: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:39: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:39: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:39: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:39: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:39: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:39: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:40: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:40: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:40: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:40: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:40: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:35:40: PM2 log: App [parser-worker:1] online
+2025-08-29T00:35:41: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:35:41: PM2 log: Script /opt/parser/src/worker.js had too many unstable restarts (16). Stopped. "errored"
+2025-08-29T00:36:40: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:40: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:40: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:40: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:40: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:40: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:40: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:40: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:41: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:41: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:41: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:41: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:41: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:41: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:42: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:42: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:42: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:42: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:42: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:42: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:43: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:43: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:43: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:43: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:43: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:43: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:43: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:43: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:43: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:44: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:44: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:44: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:44: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:44: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:44: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:45: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:45: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:45: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:45: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:45: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:45: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:46: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:46: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:46: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:46: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:46: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:36:46: PM2 log: App [parser-worker:1] online
+2025-08-29T00:36:47: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:36:47: PM2 log: Script /opt/parser/src/worker.js had too many unstable restarts (16). Stopped. "errored"
+2025-08-29T00:37:43: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:43: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:43: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:43: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:43: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:44: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:44: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:44: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:44: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:44: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:44: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:45: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:45: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:45: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:45: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:45: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:45: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:45: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:45: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:45: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:46: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:46: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:46: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:46: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:46: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:46: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:47: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:47: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:47: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:47: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:47: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:47: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:48: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:48: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:48: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:48: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:48: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:48: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:49: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:49: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:49: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:49: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:49: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:49: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:49: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:49: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:37:49: PM2 log: App [parser-worker:1] online
+2025-08-29T00:37:50: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:37:50: PM2 log: Script /opt/parser/src/worker.js had too many unstable restarts (16). Stopped. "errored"
+2025-08-29T00:39:03: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:03: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:04: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:04: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:04: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:04: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:04: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:04: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:05: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:05: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:05: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:05: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:05: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:05: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:05: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:05: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:05: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:06: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:06: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:06: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:06: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:06: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:06: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:07: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:07: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:07: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:07: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:07: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:07: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:08: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:08: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:08: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:08: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:08: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:08: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:09: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:09: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:09: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:09: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:09: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:09: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:09: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:09: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:09: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:10: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:10: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:39:10: PM2 log: App [parser-worker:1] online
+2025-08-29T00:39:10: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T00:39:10: PM2 log: Script /opt/parser/src/worker.js had too many unstable restarts (16). Stopped. "errored"
+2025-08-29T00:47:05: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T00:47:05: PM2 log: App [parser-worker:1] online
+2025-08-29T01:43:11: PM2 log: Stopping app:parser-api id:0
+2025-08-29T01:43:11: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T01:43:11: PM2 log: pid=137831 msg=process killed
+2025-08-29T01:43:11: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T01:43:11: PM2 log: App [parser-api:0] online
+2025-08-29T01:43:11: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T01:43:11: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T01:43:11: PM2 log: pid=139790 msg=process killed
+2025-08-29T01:43:11: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T01:43:11: PM2 log: App [parser-worker:1] online
+2025-08-29T01:51:48: PM2 log: Stopping app:parser-api id:0
+2025-08-29T01:51:48: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T01:51:48: PM2 log: pid=139975 msg=process killed
+2025-08-29T01:51:48: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T01:51:48: PM2 log: App [parser-api:0] online
+2025-08-29T01:51:48: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T01:51:48: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T01:51:48: PM2 log: pid=139997 msg=process killed
+2025-08-29T01:51:48: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T01:51:48: PM2 log: App [parser-worker:1] online
+2025-08-29T01:53:36: PM2 log: Stopping app:parser-api id:0
+2025-08-29T01:53:36: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T01:53:36: PM2 log: pid=140045 msg=process killed
+2025-08-29T01:54:44: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T01:54:44: PM2 log: App [parser-api:0] online
+2025-08-29T05:58:30: PM2 log: Stopping app:parser-api id:0
+2025-08-29T05:58:30: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T05:58:30: PM2 log: pid=140114 msg=process killed
+2025-08-29T05:58:30: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T05:58:30: PM2 log: App [parser-api:0] online
+2025-08-29T05:58:30: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T05:58:30: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T05:58:30: PM2 log: pid=140066 msg=process killed
+2025-08-29T05:58:30: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T05:58:30: PM2 log: App [parser-worker:1] online
+2025-08-29T05:58:39: PM2 log: Stopping app:parser-api id:0
+2025-08-29T05:58:39: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T05:58:39: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T05:58:39: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T05:58:39: PM2 log: pid=140274 msg=process killed
+2025-08-29T05:58:39: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T05:58:39: PM2 log: App [parser-api:0] online
+2025-08-29T05:58:39: PM2 log: pid=140296 msg=process killed
+2025-08-29T05:58:39: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T05:58:39: PM2 log: App [parser-worker:1] online
+2025-08-29T06:02:15: PM2 log: Stopping app:parser-api id:0
+2025-08-29T06:02:15: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T06:02:15: PM2 log: pid=140318 msg=process killed
+2025-08-29T07:00:33: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T07:00:33: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T07:00:33: PM2 log: pid=140319 msg=process killed
+2025-08-29T07:06:01: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T07:06:01: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T07:06:01: PM2 log: App [parser-api:0] online
+2025-08-29T07:06:01: PM2 log: App [parser-worker:1] online
+2025-08-29T07:14:57: PM2 log: Stopping app:parser-api id:0
+2025-08-29T07:14:57: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T07:14:58: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T07:14:58: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T07:14:58: PM2 log: pid=145676 msg=process killed
+2025-08-29T07:14:58: PM2 log: pid=145677 msg=process killed
+2025-08-29T07:14:58: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T07:14:58: PM2 log: App [parser-api:0] online
+2025-08-29T07:14:58: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T07:14:58: PM2 log: App [parser-worker:1] online
+2025-08-29T07:18:01: PM2 log: Stopping app:parser-api id:0
+2025-08-29T07:18:01: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T07:18:01: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T07:18:01: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T07:18:02: PM2 log: pid=145737 msg=process killed
+2025-08-29T07:18:02: PM2 log: pid=145738 msg=process killed
+2025-08-29T07:18:02: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T07:18:02: PM2 log: App [parser-api:0] online
+2025-08-29T07:18:02: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T07:18:02: PM2 log: App [parser-worker:1] online
+2025-08-29T07:20:07: PM2 log: App [parser-api:0] exited with code [0] via signal [SIGKILL]
+2025-08-29T07:20:07: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T07:20:07: PM2 log: App [parser-api:0] online
+2025-08-29T07:20:24: PM2 log: App [parser-api:0] exited with code [0] via signal [SIGKILL]
+2025-08-29T07:20:24: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T07:20:24: PM2 log: App [parser-api:0] online
+2025-08-29T07:21:21: PM2 log: Stopping app:parser-api id:0
+2025-08-29T07:21:21: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T07:21:21: PM2 log: pid=145870 msg=process killed
+2025-08-29T07:21:51: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T07:21:51: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T07:21:51: PM2 log: App [parser-api:0] online
+2025-08-29T07:21:51: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T07:21:51: PM2 log: pid=145800 msg=process killed
+2025-08-29T07:21:51: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T07:21:51: PM2 log: App [parser-worker:1] online
+2025-08-29T07:28:56: PM2 log: Stopping app:parser-api id:0
+2025-08-29T07:28:56: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T07:28:56: PM2 log: pid=145916 msg=process killed
+2025-08-29T07:28:56: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T07:28:56: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T07:28:56: PM2 log: pid=145927 msg=process killed
+2025-08-29T07:28:56: PM2 log: PM2 successfully stopped
+2025-08-29T07:29:15: PM2 log: ===============================================================================
+2025-08-29T07:29:15: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T07:29:15: PM2 log: Time                 : Fri Aug 29 2025 07:29:15 GMT+0000 (Coordinated Universal Time)
+2025-08-29T07:29:15: PM2 log: PM2 version          : 6.0.8
+2025-08-29T07:29:15: PM2 log: Node.js version      : 22.19.0
+2025-08-29T07:29:15: PM2 log: Current arch         : x64
+2025-08-29T07:29:15: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T07:29:15: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T07:29:15: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T07:29:15: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T07:29:15: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T07:29:15: PM2 log: Worker Interval      : 30000
+2025-08-29T07:29:15: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T07:29:15: PM2 log: Concurrent actions   : 2
+2025-08-29T07:29:15: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T07:29:15: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T07:29:15: PM2 log: ===============================================================================
+2025-08-29T07:29:15: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T07:29:15: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T07:29:15: PM2 log: App [parser-api:0] online
+2025-08-29T07:29:15: PM2 log: App [parser-worker:1] online
+2025-08-29T07:52:52: PM2 log: Stopping app:parser-api id:0
+2025-08-29T07:52:52: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T07:52:52: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T07:52:52: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T07:52:52: PM2 log: pid=146008 msg=process killed
+2025-08-29T07:52:52: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T07:52:52: PM2 log: App [parser-api:0] online
+2025-08-29T07:52:52: PM2 log: pid=146009 msg=process killed
+2025-08-29T07:52:52: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T07:52:52: PM2 log: App [parser-worker:1] online
+2025-08-29T07:53:46: PM2 log: Stopping app:parser-api id:0
+2025-08-29T07:53:46: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T07:53:46: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T07:53:46: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T07:53:46: PM2 log: pid=146705 msg=process killed
+2025-08-29T07:53:46: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T07:53:46: PM2 log: App [parser-api:0] online
+2025-08-29T07:53:46: PM2 log: pid=146711 msg=process killed
+2025-08-29T07:53:46: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T07:53:46: PM2 log: App [parser-worker:1] online
+2025-08-29T08:12:22: PM2 log: Stopping app:parser-api id:0
+2025-08-29T08:12:22: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T08:12:22: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T08:12:22: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T08:12:22: PM2 log: pid=146799 msg=process killed
+2025-08-29T08:12:22: PM2 log: pid=146800 msg=process killed
+2025-08-29T08:12:22: PM2 log: PM2 successfully stopped
+2025-08-29T08:19:02: PM2 log: ===============================================================================
+2025-08-29T08:19:02: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T08:19:02: PM2 log: Time                 : Fri Aug 29 2025 08:19:02 GMT+0000 (Coordinated Universal Time)
+2025-08-29T08:19:02: PM2 log: PM2 version          : 6.0.8
+2025-08-29T08:19:02: PM2 log: Node.js version      : 22.19.0
+2025-08-29T08:19:02: PM2 log: Current arch         : x64
+2025-08-29T08:19:02: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T08:19:02: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T08:19:02: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T08:19:02: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T08:19:02: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T08:19:02: PM2 log: Worker Interval      : 30000
+2025-08-29T08:19:02: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T08:19:02: PM2 log: Concurrent actions   : 2
+2025-08-29T08:19:02: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T08:19:02: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T08:19:02: PM2 log: ===============================================================================
+2025-08-29T08:20:02: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T08:20:02: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T08:20:02: PM2 log: App [parser-api:0] online
+2025-08-29T08:20:02: PM2 log: App [parser-worker:1] online
+2025-08-29T08:20:02: PM2 log: Stopping app:parser-api id:0
+2025-08-29T08:20:02: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T08:20:02: PM2 log: App [parser-api:0] exited with code [0] via signal [SIGINT]
+2025-08-29T08:20:02: PM2 log: App [parser-worker:1] exited with code [0] via signal [SIGINT]
+2025-08-29T08:20:03: PM2 log: pid=147185 msg=process killed
+2025-08-29T08:20:03: PM2 log: pid=147186 msg=process killed
+2025-08-29T08:20:03: PM2 log: PM2 successfully stopped
+2025-08-29T08:20:50: PM2 log: ===============================================================================
+2025-08-29T08:20:50: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T08:20:50: PM2 log: Time                 : Fri Aug 29 2025 08:20:50 GMT+0000 (Coordinated Universal Time)
+2025-08-29T08:20:50: PM2 log: PM2 version          : 6.0.8
+2025-08-29T08:20:50: PM2 log: Node.js version      : 22.19.0
+2025-08-29T08:20:50: PM2 log: Current arch         : x64
+2025-08-29T08:20:50: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T08:20:50: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T08:20:50: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T08:20:50: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T08:20:50: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T08:20:50: PM2 log: Worker Interval      : 30000
+2025-08-29T08:20:50: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T08:20:50: PM2 log: Concurrent actions   : 2
+2025-08-29T08:20:50: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T08:20:50: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T08:20:50: PM2 log: ===============================================================================
+2025-08-29T08:20:50: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T08:20:50: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T08:20:50: PM2 log: App [parser-api:0] online
+2025-08-29T08:20:50: PM2 log: App [parser-worker:1] online
+2025-08-29T08:20:50: PM2 log: Stopping app:parser-api id:0
+2025-08-29T08:20:50: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T08:20:50: PM2 log: App [parser-worker:1] exited with code [0] via signal [SIGINT]
+2025-08-29T08:20:50: PM2 log: App [parser-api:0] exited with code [0] via signal [SIGINT]
+2025-08-29T08:20:50: PM2 log: pid=147329 msg=process killed
+2025-08-29T08:20:50: PM2 log: pid=147328 msg=process killed
+2025-08-29T08:20:50: PM2 log: PM2 successfully stopped
+2025-08-29T08:44:50: PM2 log: ===============================================================================
+2025-08-29T08:44:50: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T08:44:50: PM2 log: Time                 : Fri Aug 29 2025 08:44:50 GMT+0000 (Coordinated Universal Time)
+2025-08-29T08:44:50: PM2 log: PM2 version          : 6.0.8
+2025-08-29T08:44:50: PM2 log: Node.js version      : 22.19.0
+2025-08-29T08:44:50: PM2 log: Current arch         : x64
+2025-08-29T08:44:50: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T08:44:50: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T08:44:50: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T08:44:50: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T08:44:50: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T08:44:50: PM2 log: Worker Interval      : 30000
+2025-08-29T08:44:50: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T08:44:50: PM2 log: Concurrent actions   : 2
+2025-08-29T08:44:50: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T08:44:50: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T08:44:50: PM2 log: ===============================================================================
+2025-08-29T08:44:50: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T08:44:50: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T08:44:50: PM2 log: App [parser-api:0] online
+2025-08-29T08:44:50: PM2 log: App [parser-worker:1] online
+2025-08-29T08:44:50: PM2 log: Stopping app:parser-api id:0
+2025-08-29T08:44:50: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T08:44:50: PM2 log: App [parser-api:0] exited with code [0] via signal [SIGINT]
+2025-08-29T08:44:50: PM2 log: App [parser-worker:1] exited with code [0] via signal [SIGINT]
+2025-08-29T08:44:50: PM2 log: pid=147491 msg=process killed
+2025-08-29T08:44:50: PM2 log: pid=147492 msg=process killed
+2025-08-29T08:44:50: PM2 log: PM2 successfully stopped
+2025-08-29T08:48:15: PM2 log: ===============================================================================
+2025-08-29T08:48:15: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T08:48:15: PM2 log: Time                 : Fri Aug 29 2025 08:48:15 GMT+0000 (Coordinated Universal Time)
+2025-08-29T08:48:15: PM2 log: PM2 version          : 6.0.8
+2025-08-29T08:48:15: PM2 log: Node.js version      : 22.19.0
+2025-08-29T08:48:15: PM2 log: Current arch         : x64
+2025-08-29T08:48:15: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T08:48:15: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T08:48:15: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T08:48:15: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T08:48:15: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T08:48:15: PM2 log: Worker Interval      : 30000
+2025-08-29T08:48:15: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T08:48:15: PM2 log: Concurrent actions   : 2
+2025-08-29T08:48:15: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T08:48:15: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T08:48:15: PM2 log: ===============================================================================
+2025-08-29T08:48:15: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T08:48:15: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T08:48:15: PM2 log: App [parser-api:0] online
+2025-08-29T08:48:15: PM2 log: App [parser-worker:1] online
+2025-08-29T08:48:16: PM2 log: Stopping app:parser-api id:0
+2025-08-29T08:48:16: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T08:48:16: PM2 log: App [parser-worker:1] exited with code [0] via signal [SIGINT]
+2025-08-29T08:48:16: PM2 log: App [parser-api:0] exited with code [0] via signal [SIGINT]
+2025-08-29T08:48:16: PM2 log: pid=147578 msg=process killed
+2025-08-29T08:48:16: PM2 log: pid=147579 msg=process killed
+2025-08-29T08:48:16: PM2 log: PM2 successfully stopped
+2025-08-29T08:50:20: PM2 log: ===============================================================================
+2025-08-29T08:50:20: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T08:50:20: PM2 log: Time                 : Fri Aug 29 2025 08:50:20 GMT+0000 (Coordinated Universal Time)
+2025-08-29T08:50:20: PM2 log: PM2 version          : 6.0.8
+2025-08-29T08:50:20: PM2 log: Node.js version      : 22.19.0
+2025-08-29T08:50:20: PM2 log: Current arch         : x64
+2025-08-29T08:50:20: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T08:50:20: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T08:50:20: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T08:50:20: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T08:50:20: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T08:50:20: PM2 log: Worker Interval      : 30000
+2025-08-29T08:50:20: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T08:50:20: PM2 log: Concurrent actions   : 2
+2025-08-29T08:50:20: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T08:50:20: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T08:50:20: PM2 log: ===============================================================================
+2025-08-29T08:50:20: PM2 log: PM2 successfully stopped
+2025-08-29T08:50:21: PM2 log: ===============================================================================
+2025-08-29T08:50:21: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T08:50:21: PM2 log: Time                 : Fri Aug 29 2025 08:50:21 GMT+0000 (Coordinated Universal Time)
+2025-08-29T08:50:21: PM2 log: PM2 version          : 6.0.8
+2025-08-29T08:50:21: PM2 log: Node.js version      : 22.19.0
+2025-08-29T08:50:21: PM2 log: Current arch         : x64
+2025-08-29T08:50:21: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T08:50:21: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T08:50:21: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T08:50:21: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T08:50:21: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T08:50:21: PM2 log: Worker Interval      : 30000
+2025-08-29T08:50:21: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T08:50:21: PM2 log: Concurrent actions   : 2
+2025-08-29T08:50:21: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T08:50:21: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T08:50:21: PM2 log: ===============================================================================
+2025-08-29T08:50:21: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T08:50:21: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T08:50:21: PM2 log: App [parser-api:0] online
+2025-08-29T08:50:21: PM2 log: App [parser-worker:1] online
+2025-08-29T08:50:22: PM2 log: Stopping app:parser-api id:0
+2025-08-29T08:50:22: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T08:50:22: PM2 log: App [parser-api:0] exited with code [0] via signal [SIGINT]
+2025-08-29T08:50:22: PM2 log: App [parser-worker:1] exited with code [0] via signal [SIGINT]
+2025-08-29T08:50:22: PM2 log: pid=147726 msg=process killed
+2025-08-29T08:50:22: PM2 log: pid=147727 msg=process killed
+2025-08-29T08:50:22: PM2 log: PM2 successfully stopped
+2025-08-29T08:50:22: PM2 log: ===============================================================================
+2025-08-29T08:50:22: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T08:50:22: PM2 log: Time                 : Fri Aug 29 2025 08:50:22 GMT+0000 (Coordinated Universal Time)
+2025-08-29T08:50:22: PM2 log: PM2 version          : 6.0.8
+2025-08-29T08:50:22: PM2 log: Node.js version      : 22.19.0
+2025-08-29T08:50:22: PM2 log: Current arch         : x64
+2025-08-29T08:50:22: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T08:50:22: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T08:50:22: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T08:50:22: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T08:50:22: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T08:50:22: PM2 log: Worker Interval      : 30000
+2025-08-29T08:50:22: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T08:50:22: PM2 log: Concurrent actions   : 2
+2025-08-29T08:50:22: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T08:50:22: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T08:50:22: PM2 log: ===============================================================================
+2025-08-29T08:50:22: PM2 log: PM2 successfully stopped
+2025-08-29T08:58:46: PM2 log: ===============================================================================
+2025-08-29T08:58:46: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T08:58:46: PM2 log: Time                 : Fri Aug 29 2025 08:58:46 GMT+0000 (Coordinated Universal Time)
+2025-08-29T08:58:46: PM2 log: PM2 version          : 6.0.8
+2025-08-29T08:58:46: PM2 log: Node.js version      : 22.19.0
+2025-08-29T08:58:46: PM2 log: Current arch         : x64
+2025-08-29T08:58:46: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T08:58:46: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T08:58:46: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T08:58:46: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T08:58:46: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T08:58:46: PM2 log: Worker Interval      : 30000
+2025-08-29T08:58:46: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T08:58:46: PM2 log: Concurrent actions   : 2
+2025-08-29T08:58:46: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T08:58:46: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T08:58:46: PM2 log: ===============================================================================
+2025-08-29T08:58:46: PM2 log: PM2 successfully stopped
+2025-08-29T08:58:54: PM2 log: ===============================================================================
+2025-08-29T08:58:54: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2025-08-29T08:58:54: PM2 log: Time                 : Fri Aug 29 2025 08:58:54 GMT+0000 (Coordinated Universal Time)
+2025-08-29T08:58:54: PM2 log: PM2 version          : 6.0.8
+2025-08-29T08:58:54: PM2 log: Node.js version      : 22.19.0
+2025-08-29T08:58:54: PM2 log: Current arch         : x64
+2025-08-29T08:58:54: PM2 log: PM2 home             : /opt/parser/.pm2
+2025-08-29T08:58:54: PM2 log: PM2 PID file         : /opt/parser/.pm2/pm2.pid
+2025-08-29T08:58:54: PM2 log: RPC socket file      : /opt/parser/.pm2/rpc.sock
+2025-08-29T08:58:54: PM2 log: BUS socket file      : /opt/parser/.pm2/pub.sock
+2025-08-29T08:58:54: PM2 log: Application log path : /opt/parser/.pm2/logs
+2025-08-29T08:58:54: PM2 log: Worker Interval      : 30000
+2025-08-29T08:58:54: PM2 log: Process dump file    : /opt/parser/.pm2/dump.pm2
+2025-08-29T08:58:54: PM2 log: Concurrent actions   : 2
+2025-08-29T08:58:54: PM2 log: SIGTERM timeout      : 1600
+2025-08-29T08:58:54: PM2 log: Runtime Binary       : /usr/bin/node
+2025-08-29T08:58:54: PM2 log: ===============================================================================
+2025-08-29T08:58:54: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T08:58:54: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T08:58:54: PM2 log: App [parser-api:0] online
+2025-08-29T08:58:54: PM2 log: App [parser-worker:1] online
+2025-08-29T09:49:28: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T09:49:28: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T09:49:28: PM2 log: pid=147899 msg=process killed
+2025-08-29T09:49:28: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T09:49:28: PM2 log: App [parser-worker:1] online
+2025-08-29T11:28:17: PM2 log: Stopping app:parser-api id:0
+2025-08-29T11:28:17: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T11:28:17: PM2 log: pid=147898 msg=process killed
+2025-08-29T11:28:17: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T11:28:17: PM2 log: App [parser-api:0] online
+2025-08-29T11:28:17: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T11:28:17: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T11:28:17: PM2 log: pid=152166 msg=process killed
+2025-08-29T11:28:17: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T11:28:17: PM2 log: App [parser-worker:1] online
+2025-08-29T11:28:36: PM2 log: Stopping app:parser-api id:0
+2025-08-29T11:28:36: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T11:28:36: PM2 log: pid=160261 msg=process killed
+2025-08-29T11:28:36: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T11:28:36: PM2 log: App [parser-api:0] online
+2025-08-29T11:28:36: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T11:28:36: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T11:28:36: PM2 log: pid=160283 msg=process killed
+2025-08-29T11:28:36: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T11:28:36: PM2 log: App [parser-worker:1] online
+2025-08-29T11:38:01: PM2 log: Stopping app:parser-api id:0
+2025-08-29T11:38:01: PM2 log: App [parser-api:0] exited with code [1] via signal [SIGINT]
+2025-08-29T11:38:01: PM2 log: pid=160325 msg=process killed
+2025-08-29T11:38:01: PM2 log: App [parser-api:0] starting in -fork mode-
+2025-08-29T11:38:01: PM2 log: App [parser-api:0] online
+2025-08-29T11:38:01: PM2 log: Stopping app:parser-worker id:1
+2025-08-29T11:38:02: PM2 log: App [parser-worker:1] exited with code [1] via signal [SIGINT]
+2025-08-29T11:38:02: PM2 log: pid=160346 msg=process killed
+2025-08-29T11:38:02: PM2 log: App [parser-worker:1] starting in -fork mode-
+2025-08-29T11:38:02: PM2 log: App [parser-worker:1] online

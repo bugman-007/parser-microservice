@@ -1,0 +1,94 @@
+{
+  "name": "silkcards-parser-microservice",
+  "version": "1.1.0",
+  "description": "Production-ready AI/PDF parsing microservice with OCG layer extraction and 24/7 reliability",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "worker": "node src/worker.js",
+    "dev:worker": "node --watch src/worker.js",
+    "test": "node --test src/**/*.test.js",
+    "build": "echo 'No build step required'",
+    "setup": "npm install && npm run setup:dirs && npm run setup:deps",
+    "setup:dirs": "mkdir -p uploads logs",
+    "setup:deps": "node scripts/check-dependencies.js",
+    "cleanup": "node src/scripts/cleanup.js",
+    "health": "node src/scripts/health-check.js",
+    "production:deploy": "chmod +x production-deploy.sh && ./production-deploy.sh",
+    "production:start": "sudo systemctl start silkcards-parser-api silkcards-parser-worker",
+    "production:stop": "sudo systemctl stop silkcards-parser-api silkcards-parser-worker",
+    "production:restart": "sudo systemctl restart silkcards-parser-api silkcards-parser-worker",
+    "production:status": "sudo systemctl status silkcards-parser-api silkcards-parser-worker",
+    "production:logs": "sudo journalctl -u silkcards-parser-api -u silkcards-parser-worker -f",
+    "docker:build": "docker build -t silkcards-parser .",
+    "docker:run": "docker run -p 8000:80 -e NODE_ENV=production silkcards-parser"
+  },
+  "keywords": [
+    "pdf",
+    "illustrator",
+    "ocg",
+    "parsing",
+    "3d",
+    "printing",
+    "microservice",
+    "production",
+    "bull",
+    "redis",
+    "queue"
+  ],
+  "author": "SilkCards Parser Team",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "3.29.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.1.1",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.3.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.2",
+    "pdf-lib": "^1.17.1",
+    "pngjs": "^7.0.0",
+    "sharp": "^0.32.6",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silkcards/parser-microservice"
+  },
+  "config": {
+    "dpi": 600,
+    "concurrency": 3,
+    "ttl_days": 30,
+    "max_file_size": "100MB"
+  },
+  "systemd": {
+    "api_service": "silkcards-parser-api.service",
+    "worker_service": "silkcards-parser-worker.service",
+    "healthcheck_timer": "silkcards-parser-healthcheck.timer",
+    "cleanup_timer": "silkcards-parser-cleanup.timer"
+  },
+  "production": {
+    "user": "parser",
+    "home": "/opt/parser",
+    "logs": "/var/log/parser",
+    "upload_dir": "/opt/parser/uploads",
+    "redis_config": "/etc/redis/redis.conf.d/parser.conf",
+    "nginx_config": "/etc/nginx/sites-available/silkcards-parser"
+  }
+}
