@@ -13,7 +13,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Worker concurrency (kept)
-const concurrency = parseInt(process.env.WORKER_CONCURRENCY || "3");
+const concurrency = parseInt(process.env.WORKER_CONCURRENCY || "3", 10);
+console.log('REGISTERING consumer: name = "parse", concurrency=', concurrency);
 
 console.log("🏭 Parser Worker Configuration:");
 console.log(`  Concurrency: ${concurrency}`);
@@ -41,6 +42,9 @@ async function initializeQueue() {
     console.log("🔧 Initializing queue system...");
     await redis.ping();
     console.log("✅ Redis connection established");
+    // Force Bull to fully initialize all clients (bclient/subscriber)
+    await parseQueue.isReady();
+    console.log("✅ Bull queue isReady()");
 
     await parseQueue.resume();
     console.log("▶️ Queue resumed - ready for processing");
@@ -68,6 +72,7 @@ async function initializeQueue() {
 
 // === The actual processor (unchanged signature, named 'parse') ===
 parseQueue.process("parse", concurrency, async (job) => {
+  console.log('CONSUMER LIVE -> got job', job.id, job.data?.originalName);
   const { jobId, filePath, originalName, fileSize, options, submittedAt } =
     job.data;
 

@@ -71,6 +71,7 @@ await initializeQueue();
 async function initializeQueue() {
   try {
     console.log("🔧 Initializing queue system...");
+    await parseQueue.isReady();
     await parseQueue.resume();
     console.log("▶️ Queue resumed - accepting new jobs");
 

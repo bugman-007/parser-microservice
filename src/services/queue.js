@@ -5,12 +5,12 @@ import Redis from "ioredis";
 // Redis connection configuration (unchanged behavior)
 const redisConfig = {
   host: process.env.REDIS_HOST || "127.0.0.1",
-  port: process.env.REDIS_PORT || 6379,
-  db: process.env.REDIS_DB || 0,
+  port: Number(process.env.REDIS_PORT || 6379),
+  db: Number(process.env.REDIS_DB || 0),
   password: process.env.REDIS_PASSWORD || undefined,
   maxRetriesPerRequest: 3,
   retryDelayOnFailover: 100,
-  lazyConnect: true,
+  // lazyConnect: true,
 };
 
 console.log("🔴 Redis Configuration:", {
@@ -25,6 +25,7 @@ export const redis = new Redis(redisConfig);
 
 // Create parse queue (shared)
 export const parseQueue = new Queue(process.env.QUEUE_NAME || "parse_jobs", {
+  prefix: process.env.QUEUE_PREFIX || 'bull',
   redis: redisConfig,
   defaultJobOptions: {
     removeOnComplete: 10,
