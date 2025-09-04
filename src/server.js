@@ -207,7 +207,7 @@ app.post(
             checks: preflight.checks, // structured pass/fail list
             violations: preflight.violations, // error-level messages
             warnings: preflight.warnings, // advisory messages
-            expectations: preflight.expectations, // what “good” looks like
+            expectations: preflight.expectations, // what "good" looks like
             detected: preflight.detected, // raw signals (ocg, separations, overprint)
           },
         });
@@ -259,6 +259,299 @@ app.post(
     }
   }
 );
+
+// Get job status
+app.get("/jobs/:jobId/status", authenticateRequest, async (req, res) => {
+  try {
+    const jobId = req.params.jobId;
+    const jobDir = path.join(UPLOAD_DIR, jobId);
+
+    // Check if job directory exists
+    if (!(await fs.pathExists(jobDir))) {
+      return res.status(404).json({
+        error: "Job not found",
+        jobId,
+        code: "JOB_NOT_FOUND",
+      });
+    }
+
+    // Check if result file exists (completed)
+    const resultPath = path.join(jobDir, "result.json");
+    if (await fs.pathExists(resultPath)) {
+      const stats = await fs.stat(resultPath);
+      return res.json({
+        status: "completed",
+        jobId,
+        completedAt: stats.mtime.toISOString(),
+      });
+    }
+
+    // Check if error file exists (failed)
+    const errorPath = path.join(jobDir, "error.json");
+    if (await fs.pathExists(errorPath)) {
+      const errorData = await fs.readJson(errorPath);
+      return res.json({
+        status: "failed",
+        jobId,
+        error: errorData.message,
+        failedAt: errorData.failedAt,
+      });
+    }
+
+    // Check queue status for active/waiting jobs
+    try {
+      const waiting = await parseQueue.getWaiting();
+      const active = await parseQueue.getActive();
+
+      const waitingJob = waiting.find(
+        (job) => job.data && job.data.jobId === jobId
+      );
+      const activeJob = active.find(
+        (job) => job.data && job.data.jobId === jobId
+      );
+
+      if (waitingJob) {
+        return res.json({
+          status: "waiting",
+          jobId,
+          queuePosition: waiting.indexOf(waitingJob) + 1,
+          totalWaiting: waiting.length,
+        });
+      }
+
+      if (activeJob) {
+        const progress = await activeJob.progress().catch(() => 0);
+        return res.json({
+          status: "processing",
+          jobId,
+          progress: progress || 0,
+        });
+      }
+    } catch (queueError) {
+      logger.warn("Queue status check failed:", queueError);
+    }
+
+    // Job exists but no clear status - assume processing
+    return res.json({
+      status: "processing",
+      jobId,
+      progress: 0,
+    });
+  } catch (error) {
+    logger.error("Status check failed:", error);
+    res.status(500).json({
+      error: "Status check failed",
+      code: "STATUS_CHECK_ERROR",
+    });
+  }
+});
+
+app.get("/status/:jobId", authenticateRequest, async (req, res) => {
+  try {
+    const jobId = req.params.jobId;
+    const jobDir = path.join(UPLOAD_DIR, jobId);
+
+    // 404 if job directory doesn't exist
+    if (!(await fs.pathExists(jobDir))) {
+      return res
+        .status(404)
+        .json({ error: "Job not found", jobId, code: "JOB_NOT_FOUND" });
+    }
+
+    // Completed?
+    const resultPath = path.join(jobDir, "result.json");
+    if (await fs.pathExists(resultPath)) {
+      const stats = await fs.stat(resultPath);
+      return res.json({
+        status: "completed",
+        jobId,
+        completedAt: stats.mtime.toISOString(),
+      });
+    }
+
+    // Failed?
+    const errorPath = path.join(jobDir, "error.json");
+    if (await fs.pathExists(errorPath)) {
+      const errorData = await fs.readJson(errorPath);
+      return res.json({
+        status: "failed",
+        jobId,
+        error: errorData.message,
+        failedAt: errorData.failedAt,
+      });
+    }
+
+    // Queue state
+    try {
+      const waiting = await parseQueue.getWaiting();
+      const active = await parseQueue.getActive();
+      const waitingJob = waiting.find((j) => j.data && j.data.jobId === jobId);
+      const activeJob = active.find((j) => j.data && j.data.jobId === jobId);
+
+      if (waitingJob) {
+        return res.json({
+          status: "waiting",
+          jobId,
+          queuePosition: waiting.indexOf(waitingJob) + 1,
+          totalWaiting: waiting.length,
+        });
+      }
+      if (activeJob) {
+        const progress = await activeJob.progress().catch(() => 0);
+        return res.json({
+          status: "processing",
+          jobId,
+          progress: progress || 0,
+        });
+      }
+    } catch (queueError) {
+      // non-fatal
+    }
+
+    // Fallback
+    return res.json({ status: "processing", jobId, progress: 0 });
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ error: "Status check failed", code: "STATUS_CHECK_ERROR" });
+  }
+});
+
+// Get job result
+app.get("/jobs/:jobId/result", authenticateRequest, async (req, res) => {
+  try {
+    const jobId = req.params.jobId;
+    const jobDir = path.join(UPLOAD_DIR, jobId);
+    const resultPath = path.join(jobDir, "result.json");
+
+    if (!(await fs.pathExists(resultPath))) {
+      // Check if job is still processing
+      try {
+        const active = await parseQueue.getActive();
+        const isProcessing = active.some(
+          (job) => job.data && job.data.jobId === jobId
+        );
+
+        if (isProcessing) {
+          return res.status(202).json({
+            message: "Job is still processing",
+            jobId,
+            code: "JOB_PROCESSING",
+          });
+        }
+      } catch (queueError) {
+        logger.warn("Queue check failed in result fetch:", queueError);
+      }
+
+      // Check if there's an error file instead
+      const errorPath = path.join(jobDir, "error.json");
+      if (await fs.pathExists(errorPath)) {
+        return res.status(422).json({
+          error: "Job failed during processing",
+          jobId,
+          code: "JOB_FAILED",
+        });
+      }
+
+      return res.status(404).json({
+        error: "Result not found",
+        jobId,
+        code: "RESULT_NOT_FOUND",
+      });
+    }
+
+    const result = await fs.readJson(resultPath);
+    res.json({
+      success: true,
+      jobId,
+      result,
+    });
+  } catch (error) {
+    logger.error("Result fetch failed:", error);
+    res.status(500).json({
+      error: "Failed to fetch result",
+      code: "RESULT_FETCH_ERROR",
+    });
+  }
+});
+
+// Alias: GET /jobs/:jobId/result.json  (same behavior as /jobs/:jobId/result)
+app.get("/jobs/:jobId/result.json", authenticateRequest, async (req, res) => {
+  try {
+    const jobId = req.params.jobId;
+    const jobDir = path.join(UPLOAD_DIR, jobId);
+    const resultPath = path.join(jobDir, "result.json");
+
+    if (!(await fs.pathExists(resultPath))) {
+      // Still processing?
+      try {
+        const active = await parseQueue.getActive();
+        const isProcessing = active.some(
+          (job) => job.data && job.data.jobId === jobId
+        );
+        if (isProcessing) {
+          return res
+            .status(202)
+            .json({
+              message: "Job is still processing",
+              jobId,
+              code: "JOB_PROCESSING",
+            });
+        }
+      } catch (_) {}
+      // Failed?
+      const errorPath = path.join(jobDir, "error.json");
+      if (await fs.pathExists(errorPath)) {
+        return res
+          .status(422)
+          .json({
+            error: "Job failed during processing",
+            jobId,
+            code: "JOB_FAILED",
+          });
+      }
+      // Not found
+      return res
+        .status(404)
+        .json({ error: "Result not found", jobId, code: "RESULT_NOT_FOUND" });
+    }
+
+    const result = await fs.readJson(resultPath);
+    return res.json({ success: true, jobId, result });
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ error: "Failed to fetch result", code: "RESULT_FETCH_ERROR" });
+  }
+});
+
+// Get job preflight results (for failed jobs)
+app.get("/jobs/:jobId/preflight", authenticateRequest, async (req, res) => {
+  try {
+    const jobId = req.params.jobId;
+    const preflightPath = path.join(UPLOAD_DIR, jobId, "preflight.json");
+
+    if (!(await fs.pathExists(preflightPath))) {
+      return res.status(404).json({
+        error: "Preflight data not found",
+        jobId,
+        code: "PREFLIGHT_NOT_FOUND",
+      });
+    }
+
+    const preflight = await fs.readJson(preflightPath);
+    res.json({
+      jobId,
+      preflight,
+    });
+  } catch (error) {
+    logger.error("Preflight fetch failed:", error);
+    res.status(500).json({
+      error: "Failed to fetch preflight data",
+      code: "PREFLIGHT_FETCH_ERROR",
+    });
+  }
+});
 
 // Serve generated assets (unchanged)
 app.get("/jobs/:jobId/assets/:filename", async (req, res) => {

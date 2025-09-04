@@ -72,7 +72,7 @@ async function initializeQueue() {
 
 // === The actual processor (unchanged signature, named 'parse') ===
 parseQueue.process("parse", concurrency, async (job) => {
-  console.log('CONSUMER LIVE -> got job', job.id, job.data?.originalName);
+  console.log("CONSUMER LIVE -> got job", job.id, job.data?.originalName);
   const { jobId, filePath, originalName, fileSize, options, submittedAt } =
     job.data;
 
@@ -141,7 +141,7 @@ parseQueue.process("parse", concurrency, async (job) => {
     result.quality = qualityScore;
 
     result.processing = {
-      ...result.parsing,
+      ...(result.parsing || {}),
       steps: processingSteps,
       totalTime: Date.now() - startTime,
       workerPid: process.pid,
@@ -165,7 +165,7 @@ parseQueue.process("parse", concurrency, async (job) => {
       }
       console.log("🧹 Cleaned up temporary files");
     } catch (cleanupError) {
-      console.warn("⚠️ Cleanup warning:", cleanupError.message);
+      console.warn("⚠️ Cleanup warning:", cleanupError);
     }
 
     const totalTime = Date.now() - startTime;
@@ -317,7 +317,7 @@ parseQueue.on("waiting", (jobId) => {
   console.log(`⏳ Job waiting: ${jobId}`);
 });
 parseQueue.on("active", (job) => {
-  console.log(`🔄 Job started: ${job.id} (${job.data.originalName})`);
+  console.log(`▶️ Job active: ${job.id} (${job.data?.originalName})`);
 });
 parseQueue.on("completed", (job, result) => {
   console.log(

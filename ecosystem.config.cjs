@@ -17,8 +17,7 @@ module.exports = {
         REDIS_HOST: '127.0.0.1',
         REDIS_PORT: '6379',
         REDIS_DB: '0',
-	QUEUE_NAME: 'parse_jobs',
-	QUEUE_PREFIX: 'bull'
+	QUEUE_NAME: 'parse_jobs'
       },
       error_file: '/var/log/parser/api-error.log',
       out_file: '/var/log/parser/api-out.log',
@@ -42,8 +41,7 @@ module.exports = {
         REDIS_HOST: '127.0.0.1',
         REDIS_PORT: '6379',
         REDIS_DB: '0',
-	QUEUE_NAME: 'parse_jobs',
-	QUEUE_PREFIX: 'bull'
+	QUEUE_NAME: 'parse_jobs'
       },
       error_file: '/var/log/parser/worker-error.log',
       out_file: '/var/log/parser/worker-out.log',

@@ -249,28 +249,31 @@ export async function runPreflight(filePath) {
   for (const fin of requested) {
     if (fin === "foil") {
       const ok = result.detected.separationMap.foil.length > 0;
+      // POC policy: treat missing FOIL_* separation as a WARNING (allow preview)
       addCheck(
         "sep.foil",
         "FOIL layers require FOIL_* spot separation(s)",
         "Separation: /FOIL_*",
         ok ? result.detected.separationMap.foil.join(", ") : "None",
         ok,
-        PREFLIGHT_STRICT ? "error" : "warning"
+        "warning"
       );
     }
     if (fin === "spot_uv") {
       const ok = result.detected.separationMap.spot_uv.length > 0;
+      // POC policy: treat missing SPOT_UV separation as a WARNING (allow preview)
       addCheck(
         "sep.uv",
         "SPOT_UV layers require UV spot separation",
         "Separation: /SPOT_UV (or /UV)",
         ok ? result.detected.separationMap.spot_uv.join(", ") : "None",
         ok,
-        PREFLIGHT_STRICT ? "error" : "warning"
+        "warning"
       );
     }
     if (fin === "emboss") {
       const ok = result.detected.separationMap.emboss.length > 0;
+      // keep as ERROR (emboss plate needed for accurate finishing intent)
       addCheck(
         "sep.emboss",
         "EMBOSS layers require EMBOSS spot separation",
@@ -281,6 +284,7 @@ export async function runPreflight(filePath) {
     }
     if (fin === "deboss") {
       const ok = result.detected.separationMap.deboss.length > 0;
+      // keep as ERROR
       addCheck(
         "sep.deboss",
         "DEBOSS layers require DEBOSS spot separation",
@@ -291,6 +295,7 @@ export async function runPreflight(filePath) {
     }
     if (fin === "die_cut") {
       const ok = result.detected.separationMap.die_cut.length > 0;
+      // keep as ERROR (die is critical for trim geometry)
       addCheck(
         "sep.die",
         "DIE_CUT layers require DIE/DIE_CUT spot separation",
@@ -332,12 +337,11 @@ export async function runPreflight(filePath) {
       "Create PDF Compatible File",
       "Create Acrobat Layers from Top-level Layers",
     ],
-    finishColor: "Finishes must be true spot (/Separation) colorants",
+    finishColor: "Finishes should be true spot (/Separation) colorants",
     overprint: "Finishes drawn with overprint enabled",
     dieRule: "Die is stroke-only on DIE/DIE_CUT spot separation",
-    strictMode: PREFLIGHT_STRICT
-      ? "ON (foil/UV separations required as errors)"
-      : "OFF (foil/UV separations treated as warnings)",
+    policy:
+      "POC mode: missing FOIL_* and SPOT_UV separations are treated as warnings (allowed for preview); EMBOSS/DEBOSS/DIE remain errors.",
   };
 
   return result;
