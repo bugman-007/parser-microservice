@@ -5,6 +5,8 @@
 import fs from "fs-extra";
 import path from "path";
 
+const PREFLIGHT_STRICT =
+  (process.env.PREFLIGHT_STRICT || "false").toLowerCase() === "true";
 const FINISH_TOKENS = ["foil", "emboss", "deboss", "spot_uv", "die_cut"];
 
 // Strict naming: front|back_layer_{N}_{effect}
@@ -252,7 +254,8 @@ export async function runPreflight(filePath) {
         "FOIL layers require FOIL_* spot separation(s)",
         "Separation: /FOIL_*",
         ok ? result.detected.separationMap.foil.join(", ") : "None",
-        ok
+        ok,
+        PREFLIGHT_STRICT ? "error" : "warning"
       );
     }
     if (fin === "spot_uv") {
@@ -262,7 +265,8 @@ export async function runPreflight(filePath) {
         "SPOT_UV layers require UV spot separation",
         "Separation: /SPOT_UV (or /UV)",
         ok ? result.detected.separationMap.spot_uv.join(", ") : "None",
-        ok
+        ok,
+        PREFLIGHT_STRICT ? "error" : "warning"
       );
     }
     if (fin === "emboss") {
@@ -331,6 +335,9 @@ export async function runPreflight(filePath) {
     finishColor: "Finishes must be true spot (/Separation) colorants",
     overprint: "Finishes drawn with overprint enabled",
     dieRule: "Die is stroke-only on DIE/DIE_CUT spot separation",
+    strictMode: PREFLIGHT_STRICT
+      ? "ON (foil/UV separations required as errors)"
+      : "OFF (foil/UV separations treated as warnings)",
   };
 
   return result;
@@ -346,18 +353,23 @@ export async function writeLayers(jobDir, ocgNames = []) {
   const outPath = path.join(jobDir, "layers.json");
   const payload = {
     layers: Array.isArray(ocgNames) ? ocgNames : [],
-    createdAt: new Date().toISOString()
+    createdAt: new Date().toISOString(),
   };
   await fs.writeJson(outPath, payload, { spaces: 2 });
   return outPath;
 }
 
-export async function writePlates(jobDir, separations = [], separationMap = {}) {
+export async function writePlates(
+  jobDir,
+  separations = [],
+  separationMap = {}
+) {
   const outPath = path.join(jobDir, "plates.json");
   const payload = {
     separations: Array.isArray(separations) ? separations : [],
-    map: separationMap && typeof separationMap === "object" ? separationMap : {},
-    createdAt: new Date().toISOString()
+    map:
+      separationMap && typeof separationMap === "object" ? separationMap : {},
+    createdAt: new Date().toISOString(),
   };
   await fs.writeJson(outPath, payload, { spaces: 2 });
   return outPath;
